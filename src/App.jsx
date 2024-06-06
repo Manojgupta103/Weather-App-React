@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
@@ -22,6 +22,11 @@ function App() {
     event.preventDefault()
     setCity('')
   }
+
+  useEffect(()=>{
+    console.log("James")
+  },[])
+
 return(
   <div className='w-[100%] h-[100vh] bg-[#4aacb1]' >
   <div className='max-w-[600px] mx-auto '>
