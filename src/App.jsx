@@ -7,7 +7,7 @@ function App() {
   let [city, setCity]=useState('')
   let[wdetails, setWdetails]=useState()
   let getData=(event)=>{
-    fetch(`https://api.tomorrow.io/v4/weather/forecast?location=${city}&apikey=iTtJ7WmhniemahrZjeVFdpY0pTyPGEoK`)
+
       .then((res) => res.json())
       .then((finalRes) => {
         if(finalRes.cod=="404"){
